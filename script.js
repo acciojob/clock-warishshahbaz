@@ -4,7 +4,5 @@ function timerFn(){
 	let data = new Date();
 	text.innerHTML = date
 }
-setInterval(()=>{
-	timerFn()
-},1000);
+setInterval(timerFn,1000);
 timerFn()
