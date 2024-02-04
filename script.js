@@ -3,6 +3,6 @@ function timerFn(){
 	let text = document.getElementById("timer");
 	let data = new Date();
 	text.innerHTML = date
+	let t = setTimeout(function(){ timerFn() }, 1000);
 }
-setInterval(timerFn,1000);
-window.onload(timerFn())
+timerFn();
